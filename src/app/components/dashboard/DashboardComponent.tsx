@@ -1,4 +1,4 @@
-"use client"; // Esse componente será renderizado no cliente
+"use client";
 
 import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -81,27 +81,22 @@ export default function Page() {
   }, [session?.user?.email]);
 
   useEffect(() => {
-    // Verifica se está no cliente antes de acessar window
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Só executa se estiver no cliente
     if (typeof window !== "undefined") {
-      // Define o valor inicial da largura
       setWindowWidth(window.innerWidth);
 
-      // Adiciona o event listener para resize
       window.addEventListener("resize", handleResize);
     }
 
-    // Remove o event listener quando o componente é desmontado
     return () => {
       if (typeof window !== "undefined") {
         window.removeEventListener("resize", handleResize);
       }
     };
-  }, []); // O array vazio [] garante que o useEffect rode apenas uma vez ao montar o componente
+  }, []);
 
   if (status === "loading") {
     return <p>Carregando...</p>;
