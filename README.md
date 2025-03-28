@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tasks+ ✅
 
-## Getting Started
+Uma aplicação fullstack de gestão de tarefas, construída com **Next.js**, **TypeScript** e **Firebase**. O Tasks+ permite criar, editar e organizar tarefas, com a opção de torná-las públicas para compartilhar e receber comentários de outros usuários. Autenticação via **Google OAuth** garante uma experiência segura e colaborativa.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Firebase](https://img.shields.io/badge/Firebase-9-orange)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O Tasks+ é uma ferramenta prática para gerenciar tarefas, unindo frontend e backend em um único projeto. Com **Next.js** como base, ele usa **Firebase** para armazenar dados em tempo real e **NextAuth** para login com Google. O design, estilizado com **Tailwind CSS** e enriquecido com **Shadcn tooltips**, é simples e funcional, enquanto a funcionalidade de colaboração eleva a experiência do usuário.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **CRUD de Tarefas**: Crie, edite, delete e organize suas tarefas com facilidade.
+- **Tarefas Públicas**: Torne suas tarefas visíveis e compartilhe com outros.
+- **Colaboração**: Usuários logados podem comentar em tarefas públicas.
+- **Login Social**: Entre rapidamente com sua conta Google.
 
-## Learn More
+## Tecnologias que Impulsionam o Projeto
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**: Estrutura e performance otimizada.
+- **TypeScript**: Código seguro e tipado.
+- **Tailwind CSS & Shadcn**: Design moderno com tooltips interativos.
+- **Firebase**: Banco de dados em tempo real para tarefas e comentários.
+- **NextAuth**: Autenticação OAuth com Google.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Decisões Técnicas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Escolhi **Firebase** por sua sincronização em tempo real, ideal para colaboração.
+- **NextAuth** com Google OAuth foi implementado para um login rápido e seguro, sem complicações.
